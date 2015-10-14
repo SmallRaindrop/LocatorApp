@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Role">
+      <UniqueIdentifier>{7407c239-563f-4f69-ac0c-80a43fc46411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{bfbc0de0-c837-4322-9cb7-422d5f60cc4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{3751c75b-1ce8-4c55-9a13-e30b40f6d7c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Map\AStar.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\Camera.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\map_io.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapEffect.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapObject.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapObjectManager.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\Region.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\RegionManager.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\Terrain.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\TileManager.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\TileMap.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\TileMapLoader.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\Effect.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\MoveMonitor.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\Role.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\RoleData.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\RoleEffect.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\RoleModel.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\RoleState_Idle.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\RoleState_Move.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\RoleState_Ready.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDownloadAsync.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryMonitor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ResBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ResPlist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ResPlistManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StringConverter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZipUncompressAsync.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapMask.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Role\ArmatureManager.cpp">
+      <Filter>Role</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderSprite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Map\AStar.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\Camera.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\map_def.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\map_io.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapEffect.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapObject.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapObjectManager.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\Region.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\RegionManager.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\Terrain.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\TileManager.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\TileMap.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\Effect.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\MoveMonitor.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\Role.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\RoleData.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\RoleEffect.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\RoleEvent.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\RoleModel.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\RoleState.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\RoleStatus.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\StateMachine.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioDecoder.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioEngine.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioPlayer.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDownloadAsync.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryMonitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifyCenter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResPlist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResPlistManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StringConverter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipUncompressAsync.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameShared.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapMask.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\TileMapLoader.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\RoleCommand.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="Role\ArmatureManager.h">
+      <Filter>Role</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderSprite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

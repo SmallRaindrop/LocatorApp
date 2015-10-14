@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{2924c466-2a38-43ce-8cfe-beb1f26a6536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mpq">
+      <UniqueIdentifier>{976b9b36-5948-427b-b97f-74eb1e55dd72}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="socket\ClientSocket.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="socket\IOSocket.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="socket\MessageBuffer.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="mpq\MPQPackage.cpp">
+      <Filter>mpq</Filter>
+    </ClCompile>
+    <ClCompile Include="cfgFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpq\MPQDiffer.cpp">
+      <Filter>mpq</Filter>
+    </ClCompile>
+    <ClCompile Include="mpq\MPQPacker.cpp">
+      <Filter>mpq</Filter>
+    </ClCompile>
+    <ClCompile Include="mpq\MPQPatcher.cpp">
+      <Filter>mpq</Filter>
+    </ClCompile>
+    <ClCompile Include="RunnableAsync.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HashCode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="socket\ClientSocket.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="socket\IOSocket.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="socket\MessageBuffer.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="mpq\MPQPackage.h">
+      <Filter>mpq</Filter>
+    </ClInclude>
+    <ClInclude Include="cfgFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cfgTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mpq\MPQPacker.h">
+      <Filter>mpq</Filter>
+    </ClInclude>
+    <ClInclude Include="mpq\MPQPatcher.h">
+      <Filter>mpq</Filter>
+    </ClInclude>
+    <ClInclude Include="RunnableAsync.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HashCode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="commonRef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfGuidesProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuidesProject>
+    <Project>ItemUsePrompt</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>BagGrids</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>BagUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>CustomCtrls</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>FriendsUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>ItemTipsUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>loginUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>mainUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>MessageBoxUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>roleUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>MailSendUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>TargetHeadUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>ChatMainUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>MailRecvUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>WorldMap</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>TeamUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>SelItemNumUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>FurnaceUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>PlayerUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>CopyMapUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>StoreCell</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>GuildUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>TaskDialog</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>TaskUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>Mall</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>SeverList</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>Chess5</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>PlayerCreate</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>PlayerSelect</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>ActivityCenter</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>ComposeRet</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>BattleCallOnUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>LoadUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>SelectServerUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>CountdownUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>SaleBank</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>Trade</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>UpFrameGlod</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>RoleEquip</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>WorldBoss</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>LoginGift</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>BattleInfoUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>LevelGift</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>AchievementUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>DlgBuy</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>GetAchievementActionUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>MainUINormal</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>MainUIFight</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>MainUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>HeroInfo</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>CopyEnd</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>CopyWaveEnd</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>TeamApplicationList</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>SocialUI</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>ChildNode</Project>
+    <GuidesList />
+  </GuidesProject>
+</ArrayOfGuidesProject>

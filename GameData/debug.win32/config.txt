@@ -1,0 +1,4 @@
+SourcePath=../config.xls/
+ServerPath=../../jymf_prj/gameserver
+ClientPath=../../jymf_prj/client/classes/gamescene
+BinPath=./assets/data

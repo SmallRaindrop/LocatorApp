@@ -1,0 +1,10 @@
+1. 添加物品，#additem 物品ID 数量；例：#additem 1002010 ; #additem 1003010 2
+2. 学习技能，#studyskill 技能ID；例：#studyskill 1401
+3: 技能升级, #upgradeskill 技能ID;
+4: 技能点    #addskillpoint 数量
+5: 增加经验  #addexp 数量
+6: 增加金币  #addcoin 数量
+7：增加绑定金币  #addbindcoin 数量
+8：增加元宝	#addgold 数量
+9: 接取任务     #accepttask id
+10 完成任务     #finishtask id

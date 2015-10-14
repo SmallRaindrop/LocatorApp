@@ -1,0 +1,111 @@
+1. :string说明该字段为字符串类型
+2. :client说明该字段只导出给客户端使用
+3. :server说明该字段只导出给服务器使用
+4. :none说明该字段不被导出
+5. :key用于指定表中的关键字段，只能有一个，用于唯一索引。如果没有:key指定，默认为第一个地段，并且名字必须为id。
+
+
+// 100-999为地图编号
+// 1000-9999为一般动画编号
+// 10000-99999为怪物及NPC编号
+// 100000-999999为装备编号
+// 1000000-9999999为道具编号
+// 10000000-99999999为怪物及NPC模型动画编号
+// 100000000-999999999为人物模型动画编号
+// 1000000000-199999999为人物带坐骑动画编号
+
+// 1.女战士，2.女法师，3.女弓箭手 4.男战士，5.男法师，6.男弓箭手
+
+// 道具编号规则：道具类型编号（0000）+编号（000）
+
+// 模型动画编号规则：装备编号或者怪物编号或者NPC编号（000000）+动作编号（00）+方向（0）
+
+// 角色职业定义
+#define Role_Prof_Max	3
+#define Role_Prof_ZS	1
+#define Role_Prof_FS	2
+#define Role_Prof_GJ	3
+
+// 角色性别定义
+#define Role_Sex_Female	0	
+#define Role_Sex_Male	1
+
+Prof+Role_Prof_Max*Sex
+
+// 角色动作定义
+enum RoleAction
+{
+	RoleAction_Move = 20,			// 移动
+	RoleAction_Injured,				// 受伤
+	RoleAction_Dead,				// 死亡
+	RoleAction_Prepare,				// 备战
+
+	RoleAction_Standby = 10,		// 站立
+	RoleAction_Standby1,			//
+
+	RoleAction_Attack = 30,			// 攻击
+	RoleAction_Attack1,
+	RoleAction_Attack2,
+	RoleAction_Attack3,
+};
+
+
+
+// 物品类型定义
+enum ItemType
+{
+	ItemType_None = 0,
+	ItemType_Equip = 1,
+	ItemType_Zawu = 2,
+	ItemType_Material = 3,
+	ItemType_Max,
+};
+
+enum ItemSubType
+{
+	ItemEquip_Head = 1010,
+	ItemEquip_Armor_Z = 1020,
+	ItemEquip_Armor_F = 1021,
+	ItemEquip_Armor_G = 1022,
+	ItemEquip_Weapon_Z = 1030,
+	ItemEquip_Weapon_F = 1031,
+	ItemEquip_Weapon_G = 1032,
+	ItemEquip_Wing_Z = 1040,
+	ItemEquip_Wing_F = 1041,
+	ItemEquip_Wing_G = 1042,
+	ItemEquip_Ring = 1050,
+	ItemEquip_Necklace = 1060,
+	ItemEquip_Belt = 1070,
+	ItemEquip_Shoe = 1080,
+	ItemEquip_Bangle = 1090,
+	// ...
+	ItemEquip_Max,
+
+	ItemZawu_001 = 2001,
+	ItemZawu_002 = 2002,
+	// ...
+	ItemZawu_Max,
+
+	ItemMaterial_001 = 3001,
+	ItemMaterial_002 = 3002,
+	ItemMaterial_003 = 3003,
+	ItemMaterial_004 = 3004,
+	// ...
+	ItemMaterial_Max,
+};
+
+
+enum SystemMessageType
+{
+	SystemMessage_Msg = 0,			// 系统消息 聊天框内显示的提示
+	SystemMessage_Notice1,		// 公告 上方滚动的提示
+	SystemMessage_Notice2,		// 公告 另外一种表现
+	SystemMessage_Prompt,		// 系统提示，屏幕中间提示
+	SystemMessage_Normal,		// 左下角提示，获得经验，获得金币，一会就消失
+	SystemMessage_Alert,		// 弹出提示框提示
+	SystemMessage_Mail,			// 邮件提示
+	SystemMessage_Team,			// 组队提示
+	SystemMessage_Trade,		// 交易提示
+	SystemMessage_Chat,			// 好友聊天提示
+	SystemMessage_Max,
+};

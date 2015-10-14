@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<local_info>
+  <!--平台的fid -->
+  <pid>100</pid>
+  <!--网络协议号-->
+  <pro>10017</pro>
+  <!--本地版本号-->
+  <ver>1.0.22.63</ver>
+  <!--扩展包标识-->
+  <ext>0</ext>
+  <!--最新版本文件的下载地址-->
+  <url>http://download.danjidao.com:8080/updateDesc.xml</url>
+  <!--登录服务器IP,外网：182.254.201.207-->
+  <!--<ip>182.148.123.119</ip> -->
+  <ip>192.168.1.100</ip>
+  <!--登录服务器端口号-->
+  <port>20001</port>
+</local_info>

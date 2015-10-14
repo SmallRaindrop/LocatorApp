@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>D:\Game\jymf_gamedata\uiproj</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>D:\Game\jymf_gamedata\uiproj\Resources</Resources>
+  <Name>Dramaui</Name>
+  <JsonFileName>Dramaui.json</JsonFileName>
+  <JsonFolder>D:\Game\jymf_gamedata\uiproj\Json</JsonFolder>
+  <JsonList>
+    <string>ChildNode.json</string>
+    <string>CreateHeroUI.json</string>
+    <string>CustomCtrls.json</string>
+    <string>DetailChild.json</string>
+    <string>DramaUI.json</string>
+    <string>FriendsUI.json</string>
+    <string>LoadingUI.json</string>
+    <string>LoginUI.json</string>
+    <string>ManufactureJuDuTipsUI.json</string>
+    <string>ManufactureMaterialTipsUI.json</string>
+    <string>ManufactureUI.json</string>
+    <string>MessageBoxUI.json</string>
+    <string>RoleAttriUI.json</string>
+    <string>RolePackageUI.json</string>
+    <string>SelectHeroUI.json</string>
+    <string>SelectServerUI.json</string>
+    <string>SkyBookCalcUI.json</string>
+    <string>SkyBookUI.json</string>
+    <string>ItemTipsUI.json</string>
+  </JsonList>
+  <CanvasSize>
+    <Width>1334</Width>
+    <Height>750</Height>
+  </CanvasSize>
+  <filePath>D:\Game\jymf_gamedata\uiproj\Dramaui.xml.ui</filePath>
+  <ProjectType>UIProject</ProjectType>
+  <ResRelativePath />
+  <imageFileList />
+  <imagePngList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>ItemTipsUI.json</CurrentUIJson>
+</UIProject>

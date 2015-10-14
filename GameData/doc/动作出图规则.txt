@@ -1,0 +1,33 @@
+1. 动画文件命名 游戏中所有动作文件索引都通过dataid来索引，也就是文件名必须与dataid相同。详见dataid编号规则
+
+2. 动画命名，动画文件分几类：
+
+	a. 角色动画，动作名称作为前缀，后面加“_方向”，例如：stand_0;evade_5;attack_1_0;attack_6_5
+
+	站立 RoleAction_Stand			"stand"
+	移动 RoleAction_Move			"walk"
+	翻滚 RoleAction_Evade			"evade"
+	吟唱 RoleAction_Chant			"chant"
+	受伤 RoleAction_Injured			"gethit"
+	死亡 RoleAction_Death			"death"
+	攻击 RoleAction_Skill1			"skill_1"
+	攻击 RoleAction_Skill2			"skill_2"
+	攻击 RoleAction_Skill3			"skill_3"
+	攻击 RoleAction_Skill4			"skill_4"
+	攻击 RoleAction_Skill5			"skill_5"
+	攻击 RoleAction_Skill6			"skill_6"
+	攻击 RoleAction_Skill7			"skill_7"
+
+	b. 技能特效，分方向属性的技能特效和非方向属性技能特效；方向属性技能特效命名需要加前缀“dir_”；并且在后面加入“_方向”，例如：dir_huoqiu_0。
+
+	
+
+	c. 地图部件
+
+	d. 其他
+
+3. 每个动画里面只包含一个节点，节点名称采用“body”
+
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>E:\jymf_gamedata\uiproj</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>E:\jymf_gamedata\uiproj\Resources</Resources>
+  <Name>register</Name>
+  <JsonFileName>register.json</JsonFileName>
+  <JsonFolder>E:\jymf_gamedata\uiproj\Json</JsonFolder>
+  <JsonList>
+    <string>CustomCtrls.json</string>
+    <string>OneStroke.json</string>
+    <string>OpenLock.json</string>
+  </JsonList>
+  <CanvasSize>
+    <Width>1334</Width>
+    <Height>750</Height>
+  </CanvasSize>
+  <filePath>E:\jymf_gamedata\uiproj\解锁.ui</filePath>
+  <ProjectType>UIProject</ProjectType>
+  <ResRelativePath />
+  <imageFileList />
+  <imagePngList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>OpenLock.json</CurrentUIJson>
+</UIProject>
