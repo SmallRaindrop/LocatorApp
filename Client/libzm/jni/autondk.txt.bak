@@ -1,4 +1,0 @@
-Module=zm
-Build-Type=static
-Include=../audio;../mpq;../socket;
-Source=..

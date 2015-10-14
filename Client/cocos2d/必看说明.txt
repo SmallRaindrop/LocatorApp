@@ -1,1 +1,0 @@
-1. 由于external目录比较大，未上传至SVN中。请将cocos2d-x-3.0版本中的external目录拷贝并替换。

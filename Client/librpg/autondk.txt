@@ -1,8 +1,0 @@
-Module=rpg
-Build-Type=static
-Include=../cocos2d/cocos;../cocos2d/cocos/2d;../cocos2d/cocos/2d/render;../cocos2d/cocos/base;../cocos2d/cocos/ui;../cocos2d/cocos/physics;../cocos2d/cocos/editor-support;../cocos2d/cocos/audio;../cocos2d/cocos/audio/include;../cocos2d/cocos/math/kazmath;../cocos2d/external;../cocos2d/cocos/2d/platform/android;../libzm;../libzm/include;../third-libs/include;../third-libs/include/zlib;../third-libs/include/libmpg123;
-Source=;
-Import-Libs-System=;
-Import-Libs-Thirty=;
-Import-Libs=;
-Import-Call-Module=;
