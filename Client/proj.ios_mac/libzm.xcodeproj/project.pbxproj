@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CD001D41BA19C3D00E177CF /* cfgFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001AA1BA19C3D00E177CF /* cfgFile.cpp */; };
+		5CD001D51BA19C3D00E177CF /* hashCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001AE1BA19C3D00E177CF /* hashCode.cpp */; };
+		5CD001D61BA19C3D00E177CF /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001B51BA19C3D00E177CF /* Log.cpp */; };
+		5CD001D71BA19C3D00E177CF /* MD5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001B71BA19C3D00E177CF /* MD5.cpp */; };
+		5CD001D81BA19C3D00E177CF /* MPQDiffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001BA1BA19C3D00E177CF /* MPQDiffer.cpp */; };
+		5CD001D91BA19C3D00E177CF /* MPQPackage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001BC1BA19C3D00E177CF /* MPQPackage.cpp */; };
+		5CD001DA1BA19C3D00E177CF /* MPQPacker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001BE1BA19C3D00E177CF /* MPQPacker.cpp */; };
+		5CD001DB1BA19C3D00E177CF /* MPQPatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001C01BA19C3D00E177CF /* MPQPatcher.cpp */; };
+		5CD001DC1BA19C3D00E177CF /* RunnableAsync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001C41BA19C3D00E177CF /* RunnableAsync.cpp */; };
+		5CD001DD1BA19C3D00E177CF /* ClientSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001C81BA19C3D00E177CF /* ClientSocket.cpp */; };
+		5CD001DE1BA19C3D00E177CF /* IOSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001CA1BA19C3D00E177CF /* IOSocket.cpp */; };
+		5CD001DF1BA19C3D00E177CF /* MessageBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD001CC1BA19C3D00E177CF /* MessageBuffer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C53BAA81B6B56650010F1FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C53BAAA1B6B56650010F1FC /* liblibzm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibzm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD001AA1BA19C3D00E177CF /* cfgFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cfgFile.cpp; sourceTree = "<group>"; };
+		5CD001AB1BA19C3D00E177CF /* cfgFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfgFile.h; sourceTree = "<group>"; };
+		5CD001AC1BA19C3D00E177CF /* cfgTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfgTable.h; sourceTree = "<group>"; };
+		5CD001AD1BA19C3D00E177CF /* commonRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commonRef.h; sourceTree = "<group>"; };
+		5CD001AE1BA19C3D00E177CF /* hashCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hashCode.cpp; sourceTree = "<group>"; };
+		5CD001AF1BA19C3D00E177CF /* hashCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashCode.h; sourceTree = "<group>"; };
+		5CD001B51BA19C3D00E177CF /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		5CD001B61BA19C3D00E177CF /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		5CD001B71BA19C3D00E177CF /* MD5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MD5.cpp; sourceTree = "<group>"; };
+		5CD001B81BA19C3D00E177CF /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		5CD001BA1BA19C3D00E177CF /* MPQDiffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MPQDiffer.cpp; sourceTree = "<group>"; };
+		5CD001BB1BA19C3D00E177CF /* MPQDiffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQDiffer.h; sourceTree = "<group>"; };
+		5CD001BC1BA19C3D00E177CF /* MPQPackage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MPQPackage.cpp; sourceTree = "<group>"; };
+		5CD001BD1BA19C3D00E177CF /* MPQPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQPackage.h; sourceTree = "<group>"; };
+		5CD001BE1BA19C3D00E177CF /* MPQPacker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MPQPacker.cpp; sourceTree = "<group>"; };
+		5CD001BF1BA19C3D00E177CF /* MPQPacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQPacker.h; sourceTree = "<group>"; };
+		5CD001C01BA19C3D00E177CF /* MPQPatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MPQPatcher.cpp; sourceTree = "<group>"; };
+		5CD001C11BA19C3D00E177CF /* MPQPatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQPatcher.h; sourceTree = "<group>"; };
+		5CD001C21BA19C3D00E177CF /* ProgressData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressData.h; sourceTree = "<group>"; };
+		5CD001C31BA19C3D00E177CF /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		5CD001C41BA19C3D00E177CF /* RunnableAsync.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RunnableAsync.cpp; sourceTree = "<group>"; };
+		5CD001C51BA19C3D00E177CF /* RunnableAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunnableAsync.h; sourceTree = "<group>"; };
+		5CD001C61BA19C3D00E177CF /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		5CD001C81BA19C3D00E177CF /* ClientSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClientSocket.cpp; sourceTree = "<group>"; };
+		5CD001C91BA19C3D00E177CF /* ClientSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSocket.h; sourceTree = "<group>"; };
+		5CD001CA1BA19C3D00E177CF /* IOSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOSocket.cpp; sourceTree = "<group>"; };
+		5CD001CB1BA19C3D00E177CF /* IOSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSocket.h; sourceTree = "<group>"; };
+		5CD001CC1BA19C3D00E177CF /* MessageBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MessageBuffer.cpp; sourceTree = "<group>"; };
+		5CD001CD1BA19C3D00E177CF /* MessageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBuffer.h; sourceTree = "<group>"; };
+		5CD001CE1BA19C3D00E177CF /* Net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
+		5CD001CF1BA19C3D00E177CF /* NetMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetMsg.h; sourceTree = "<group>"; };
+		5CD001D01BA19C3D00E177CF /* Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		5CD001D11BA19C3D00E177CF /* Protocol.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Protocol.txt; sourceTree = "<group>"; };
+		5CD001D21BA19C3D00E177CF /* SocketDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketDefine.h; sourceTree = "<group>"; };
+		5CD001D31BA19C3D00E177CF /* zm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zm.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C53BAA71B6B56650010F1FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C53BAA11B6B56650010F1FC = {
+			isa = PBXGroup;
+			children = (
+				5CD001A61BA19C3D00E177CF /* libzm */,
+				5C53BAAB1B6B56650010F1FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C53BAAB1B6B56650010F1FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C53BAAA1B6B56650010F1FC /* liblibzm.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CD001A61BA19C3D00E177CF /* libzm */ = {
+			isa = PBXGroup;
+			children = (
+				5CD001AA1BA19C3D00E177CF /* cfgFile.cpp */,
+				5CD001AB1BA19C3D00E177CF /* cfgFile.h */,
+				5CD001AC1BA19C3D00E177CF /* cfgTable.h */,
+				5CD001AD1BA19C3D00E177CF /* commonRef.h */,
+				5CD001AE1BA19C3D00E177CF /* hashCode.cpp */,
+				5CD001AF1BA19C3D00E177CF /* hashCode.h */,
+				5CD001B51BA19C3D00E177CF /* Log.cpp */,
+				5CD001B61BA19C3D00E177CF /* Log.h */,
+				5CD001B71BA19C3D00E177CF /* MD5.cpp */,
+				5CD001B81BA19C3D00E177CF /* MD5.h */,
+				5CD001B91BA19C3D00E177CF /* mpq */,
+				5CD001C21BA19C3D00E177CF /* ProgressData.h */,
+				5CD001C31BA19C3D00E177CF /* ReadMe.txt */,
+				5CD001C41BA19C3D00E177CF /* RunnableAsync.cpp */,
+				5CD001C51BA19C3D00E177CF /* RunnableAsync.h */,
+				5CD001C61BA19C3D00E177CF /* Singleton.h */,
+				5CD001C71BA19C3D00E177CF /* socket */,
+				5CD001D31BA19C3D00E177CF /* zm.h */,
+			);
+			name = libzm;
+			path = ../libzm;
+			sourceTree = "<group>";
+		};
+		5CD001B91BA19C3D00E177CF /* mpq */ = {
+			isa = PBXGroup;
+			children = (
+				5CD001BA1BA19C3D00E177CF /* MPQDiffer.cpp */,
+				5CD001BB1BA19C3D00E177CF /* MPQDiffer.h */,
+				5CD001BC1BA19C3D00E177CF /* MPQPackage.cpp */,
+				5CD001BD1BA19C3D00E177CF /* MPQPackage.h */,
+				5CD001BE1BA19C3D00E177CF /* MPQPacker.cpp */,
+				5CD001BF1BA19C3D00E177CF /* MPQPacker.h */,
+				5CD001C01BA19C3D00E177CF /* MPQPatcher.cpp */,
+				5CD001C11BA19C3D00E177CF /* MPQPatcher.h */,
+			);
+			path = mpq;
+			sourceTree = "<group>";
+		};
+		5CD001C71BA19C3D00E177CF /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				5CD001C81BA19C3D00E177CF /* ClientSocket.cpp */,
+				5CD001C91BA19C3D00E177CF /* ClientSocket.h */,
+				5CD001CA1BA19C3D00E177CF /* IOSocket.cpp */,
+				5CD001CB1BA19C3D00E177CF /* IOSocket.h */,
+				5CD001CC1BA19C3D00E177CF /* MessageBuffer.cpp */,
+				5CD001CD1BA19C3D00E177CF /* MessageBuffer.h */,
+				5CD001CE1BA19C3D00E177CF /* Net.h */,
+				5CD001CF1BA19C3D00E177CF /* NetMsg.h */,
+				5CD001D01BA19C3D00E177CF /* Protocol.h */,
+				5CD001D11BA19C3D00E177CF /* Protocol.txt */,
+				5CD001D21BA19C3D00E177CF /* SocketDefine.h */,
+			);
+			path = socket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C53BAA91B6B56650010F1FC /* libzm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C53BABE1B6B56660010F1FC /* Build configuration list for PBXNativeTarget "libzm" */;
+			buildPhases = (
+				5C53BAA61B6B56650010F1FC /* Sources */,
+				5C53BAA71B6B56650010F1FC /* Frameworks */,
+				5C53BAA81B6B56650010F1FC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libzm;
+			productName = libzm;
+			productReference = 5C53BAAA1B6B56650010F1FC /* liblibzm.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C53BAA21B6B56650010F1FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = SJYT_Y8;
+				TargetAttributes = {
+					5C53BAA91B6B56650010F1FC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 5C53BAA51B6B56650010F1FC /* Build configuration list for PBXProject "libzm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C53BAA11B6B56650010F1FC;
+			productRefGroup = 5C53BAAB1B6B56650010F1FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C53BAA91B6B56650010F1FC /* libzm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C53BAA61B6B56650010F1FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD001D61BA19C3D00E177CF /* Log.cpp in Sources */,
+				5CD001DC1BA19C3D00E177CF /* RunnableAsync.cpp in Sources */,
+				5CD001D91BA19C3D00E177CF /* MPQPackage.cpp in Sources */,
+				5CD001D51BA19C3D00E177CF /* hashCode.cpp in Sources */,
+				5CD001D71BA19C3D00E177CF /* MD5.cpp in Sources */,
+				5CD001DB1BA19C3D00E177CF /* MPQPatcher.cpp in Sources */,
+				5CD001D41BA19C3D00E177CF /* cfgFile.cpp in Sources */,
+				5CD001D81BA19C3D00E177CF /* MPQDiffer.cpp in Sources */,
+				5CD001DE1BA19C3D00E177CF /* IOSocket.cpp in Sources */,
+				5CD001DF1BA19C3D00E177CF /* MessageBuffer.cpp in Sources */,
+				5CD001DA1BA19C3D00E177CF /* MPQPacker.cpp in Sources */,
+				5CD001DD1BA19C3D00E177CF /* ClientSocket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5C53BABC1B6B56660010F1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = libzm;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C53BABD1B6B56660010F1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = libzm;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C53BABF1B6B56660010F1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../libzm/libzm",
+					"$(SRCROOT)/../libzm/libzm/socket",
+					"$(SRCROOT)/../libzm/libzm/jni",
+					"$(SRCROOT)/../libzm/libzm/mpq",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		5C53BAC01B6B56660010F1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../libzm/libzm",
+					"$(SRCROOT)/../libzm/libzm/socket",
+					"$(SRCROOT)/../libzm/libzm/jni",
+					"$(SRCROOT)/../libzm/libzm/mpq",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C53BAA51B6B56650010F1FC /* Build configuration list for PBXProject "libzm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C53BABC1B6B56660010F1FC /* Debug */,
+				5C53BABD1B6B56660010F1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C53BABE1B6B56660010F1FC /* Build configuration list for PBXNativeTarget "libzm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C53BABF1B6B56660010F1FC /* Debug */,
+				5C53BAC01B6B56660010F1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C53BAA21B6B56650010F1FC /* Project object */;
+}

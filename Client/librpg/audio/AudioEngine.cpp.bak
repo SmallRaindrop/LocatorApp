@@ -1,0 +1,116 @@
+#include "AudioEngine.h"
+
+static AudioEngine* s_pAudioEngine;
+
+AudioEngine::AudioEngine() : m_pALCDevice(0x0),m_pALCContext(0x0)
+{
+
+}
+
+AudioEngine::~AudioEngine()
+{
+
+}
+
+AudioEngine* AudioEngine::GetInterface()
+{
+	if( s_pAudioEngine )
+	{
+		return s_pAudioEngine;
+	}
+
+	s_pAudioEngine = new AudioEngine;
+	if ( s_pAudioEngine && s_pAudioEngine->Initialize() )
+	{
+		return s_pAudioEngine;
+	}
+
+	if ( s_pAudioEngine )
+	{
+		delete s_pAudioEngine;
+		s_pAudioEngine = 0x0;
+	}
+
+	return 0x0;
+}
+
+bool AudioEngine::Initialize()
+{
+	if ( m_pALCDevice )
+	{
+		return true;
+	}
+
+	::mpg123_init();
+
+	m_pALCDevice =alcOpenDevice(0x0);
+	if (m_pALCDevice)
+	{
+		m_pALCContext=alcCreateContext(m_pALCDevice,0x0);
+		if ( m_pALCContext )
+		{
+			alcMakeContextCurrent(m_pALCContext);
+			return true;
+		}
+
+		alcCloseDevice(m_pALCDevice);
+		m_pALCDevice = 0x0;
+		return false;
+	}
+
+	return false;
+}
+
+void AudioEngine::Destory()
+{
+	::mpg123_exit();
+
+	if ( m_pALCDevice )
+	{
+		alcCloseDevice(m_pALCDevice);
+	}
+	if ( m_pALCContext )
+	{
+		alcDestroyContext(m_pALCContext);
+	}
+
+	delete s_pAudioEngine;
+	s_pAudioEngine = 0x0;
+}
+
+AudioPlayer* AudioEngine::GetAudioPlayer(const unsigned char* buffer,size_t len)
+{
+	AudioPlayer* pAudioPlayer = new AudioPlayer;
+	if ( pAudioPlayer && pAudioPlayer->Load(buffer,len) )
+	{
+		return pAudioPlayer;
+	}
+
+	if ( pAudioPlayer )
+	{
+		delete pAudioPlayer;
+	}
+
+	return 0x0;
+}
+
+AudioPlayer* AudioEngine::GetAudioPlayer(const char* file)
+{
+	AudioPlayer* pAudioPlayer = new AudioPlayer;
+	if ( pAudioPlayer && pAudioPlayer->Load(file) )
+	{
+		return pAudioPlayer;
+	}
+
+	if ( pAudioPlayer )
+	{
+		delete pAudioPlayer;
+	}
+
+	return 0x0;
+}
+
+AudioDecoder* AudioEngine::GetAudioDecoder()
+{
+	return new AudioDecoder_WAV;
+}

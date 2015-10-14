@@ -1,0 +1,110 @@
+#include "AudioPlayer.h"
+#include "AudioDecoder.h"
+#include "AudioEngine.h"
+#include <stdio.h>
+
+AudioPlayer::AudioPlayer() : m_ALSource(0),m_ALBuffer(0),m_ALState(APS_None)
+{
+
+}
+
+AudioPlayer::~AudioPlayer()
+{
+	Release();
+}
+
+bool AudioPlayer::Load(const unsigned char* buffer,int len)
+{
+	AudioDecoder* pDecoder = AudioEngine::GetInterface()->GetAudioDecoder();
+	if ( !pDecoder )
+	{
+		return false;
+	}
+
+	pDecoder->Decode(buffer,len);
+
+	Release();
+
+	alGenBuffers(1, &m_ALBuffer);
+	alBufferData(m_ALBuffer, pDecoder->GetFormat(), pDecoder->GetData(), pDecoder->GetDataSize(), pDecoder->GetFreq() );
+	if (alGetError() != AL_NO_ERROR)
+	{
+		return false;
+	}
+
+	delete pDecoder;
+
+	alGenSources(1, &m_ALSource);
+	//assign the buffer to this source  
+	alSourcei(m_ALSource, AL_BUFFER, m_ALBuffer);
+
+	Loop();
+
+	return true;
+}
+
+bool AudioPlayer::Load(const char* file)
+{
+	FILE* fp = fopen(file,"rb+");
+	if ( !fp )
+	{
+		return false;
+	}
+
+	fseek(fp,0,SEEK_END);
+	long fsize = ftell(fp);
+	unsigned char* inmemory = new unsigned char[fsize];
+	fseek(fp,0,SEEK_SET);
+	size_t inmemsize = fread(inmemory,1,fsize,fp);
+	if ( inmemsize <= 0 )
+	{
+		return false;
+	}
+
+	fclose(fp);
+
+	return Load(inmemory,inmemsize);
+}
+
+void AudioPlayer::Loop(bool loop /* = true */)
+{
+	if ( loop )
+	{
+		alSourcei(m_ALSource,AL_LOOPING,AL_TRUE); 
+	}
+	else
+	{
+		alSourcei(m_ALSource,AL_LOOPING,AL_FALSE); 
+	}
+}
+
+void AudioPlayer::Play()
+{
+	m_ALState = APS_Playing;
+	//play the sound  
+	alSourcePlay(m_ALSource);
+}
+
+void AudioPlayer::Stop()
+{
+	m_ALState = APS_None;
+	alSourceStop(m_ALSource);
+}
+
+void AudioPlayer::Pause()
+{
+	if ( IsPlayeing() )
+	{
+		alSourcePause(m_ALSource);
+	}
+}
+
+void AudioPlayer::Release()
+{
+	m_ALState = APS_None;
+	alDeleteBuffers(1,&m_ALBuffer);
+	alDeleteSources(1,&m_ALSource);  
+	m_ALSource=0;
+	m_ALBuffer=0;
+	alGetError();
+}

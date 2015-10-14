@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Classes\Common;..\Classes;..;..\libGUI;.\vld\include;..\librpg\audio;..\librpg\Role;..\librpg\Map;..\librpg;..\libzm;..\libzm\mpq;..\libzm\audio;..\libzm\socket;..\google-breakpad\src;..\third-libs\include;..\third-libs\include\zlib;..\third-libs\include\libmpg123;..\third-libs\include\pthread;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;$(EngineRoot)cocos\editor-support;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>librpg.lib;libcocos2d.lib;libGUI.lib;libAudio.lib;libCocosStudio.lib;libExtensions.lib;libcurl_imp.lib;libzm.lib;libmpg123.lib;pthreadVCE2.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);.\vld\lib\Win32;..\third-libs\libs\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+xcopy /Y /Q "$(OutDir)\client.pdb" "..\..\..\jymf_gamedata\debug.win32" 
+xcopy /Y /Q "$(OutDir)\client.exe" "..\..\..\jymf_gamedata\debug.win32"</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Common\CoCosAudioManager.cpp" />
+    <ClCompile Include="..\Classes\Common\DataPool.cpp" />
+    <ClCompile Include="..\Classes\Common\NameManager.cpp" />
+    <ClCompile Include="..\Classes\Common\SysTipMgr.cpp" />
+    <ClCompile Include="..\Classes\GameScene\BeginnerGuide.cpp" />
+    <ClCompile Include="..\Classes\GameScene\BeginnerGuideLayer.cpp" />
+    <ClCompile Include="..\Classes\GameScene\BeyondMap.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Bullet.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Chests.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameDataManager.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameEffectLayer.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameExpression.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameHelper.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameLayer.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameManager.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameMap.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameProcess.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameScene.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameTipsLayer.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameUILayer.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GameVariable.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GodDeviceManager.cpp" />
+    <ClCompile Include="..\Classes\GameScene\GridsManager.cpp" />
+    <ClCompile Include="..\Classes\GameScene\HallTechManager.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Hero.cpp" />
+    <ClCompile Include="..\Classes\GameScene\IndicatorLayer.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Item.cpp" />
+    <ClCompile Include="..\Classes\GameScene\ItemGrid.cpp" />
+    <ClCompile Include="..\Classes\GameScene\LoginScene.cpp" />
+    <ClCompile Include="..\Classes\GameScene\MapItem.cpp" />
+    <ClCompile Include="..\Classes\GameScene\MessageCenter.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Monster.cpp" />
+    <ClCompile Include="..\Classes\GameScene\NPC.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Pet.cpp" />
+    <ClCompile Include="..\Classes\GameScene\PetDataManager.cpp" />
+    <ClCompile Include="..\Classes\GameScene\PKMode.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Player.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Robot.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RoleBuff.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RoleFighter.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RoleState_Dead.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RoleState_Fight.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RoleState_Forbiden.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RoleState_Injured.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RoleTitle.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RoleTitleLayer.cpp" />
+    <ClCompile Include="..\Classes\GameScene\RootScene.cpp" />
+    <ClCompile Include="..\Classes\GameScene\Skill.cpp" />
+    <ClCompile Include="..\Classes\GameScene\SkillScript.cpp" />
+    <ClCompile Include="..\Classes\GameScene\SkillScriptFactory.cpp" />
+    <ClCompile Include="..\Classes\GameScene\TaskMgr.cpp" />
+    <ClCompile Include="..\Classes\GameScene\UpdateScene.cpp" />
+    <ClCompile Include="..\Classes\GameUpdate\GameUpdate.cpp" />
+    <ClCompile Include="..\Classes\GameUpdate\GameUpdateManager.cpp" />
+    <ClCompile Include="..\Classes\GameUpdate\GameUpdateUI.cpp" />
+    <ClCompile Include="..\Classes\Net\message.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_achievement.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_activeCenter.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_battle.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_betweenClientLs.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_betweenLsGs.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_betweenLsPs.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_chat.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_friend.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_guild.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_item.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_mail.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_mall.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_map.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_move.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_nonInGame.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_others.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_pet.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_role.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_sale.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_task.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_team.cpp" />
+    <ClCompile Include="..\Classes\Net\msg_trade.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcher.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Achievement.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_ActivityCenter.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Battle.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_betweenLsPs.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Chat.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_friend.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Guid.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_item.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Login.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_LS2C.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Mall.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Map.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Others.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Pet.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Role.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Sale.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Task.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Team.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_Trade.cpp" />
+    <ClCompile Include="..\Classes\Net\NetDispatcherHandle_mail.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_achievement.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_activeCenter.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_battle.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_betweenClientLs.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_betweenLsGs.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_betweenLsPs.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_chat.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_friend.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_guild.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_item.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_mail.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_mall.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_map.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_move.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_nonInGame.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_others.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_pet.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_role.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_sale.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_task.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_team.cpp" />
+    <ClCompile Include="..\Classes\Net\pk_trade.cpp" />
+    <ClCompile Include="..\Classes\UIData\CCopyDataMgr.cpp" />
+    <ClCompile Include="..\Classes\UIData\ChatData.cpp" />
+    <ClCompile Include="..\Classes\UIData\CMatchMachine.cpp" />
+    <ClCompile Include="..\Classes\UIData\Legion.cpp" />
+    <ClCompile Include="..\Classes\UI\CommonUI.cpp" />
+    <ClCompile Include="..\Classes\UI\CopyEnd.cpp" />
+    <ClCompile Include="..\Classes\UI\CopyMapUI.cpp" />
+    <ClCompile Include="..\Classes\UI\CopyMapUICommon.cpp" />
+    <ClCompile Include="..\Classes\UI\CopyMapUIContendFor.cpp" />
+    <ClCompile Include="..\Classes\UI\CopyMapUIDef.cpp" />
+    <ClCompile Include="..\Classes\UI\CopyMapUIFreeFight.cpp" />
+    <ClCompile Include="..\Classes\UI\CopyMapUISurvive.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\DragCtrol.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\PageNum.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\ProgressBar.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\ScrollGrids.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\ScrollMenu.cpp" />
+    <ClCompile Include="..\Classes\UI\DramaUI.cpp" />
+    <ClCompile Include="..\Classes\UI\FightPause.cpp" />
+    <ClCompile Include="..\Classes\UI\FreeFightCheckOut.cpp" />
+    <ClCompile Include="..\Classes\UI\FreeFightScoreUI.cpp" />
+    <ClCompile Include="..\Classes\UI\FriendUI.cpp" />
+    <ClCompile Include="..\Classes\UI\GodDeviceUI.cpp" />
+    <ClCompile Include="..\Classes\UI\HallTechTreeUI.cpp" />
+    <ClCompile Include="..\Classes\UI\HallTechUI.cpp" />
+    <ClCompile Include="..\Classes\UI\HeroInfo.cpp" />
+    <ClCompile Include="..\Classes\UI\ItemTipsUI.cpp" />
+    <ClCompile Include="..\Classes\UI\AddLegionUI.cpp" />
+    <ClCompile Include="..\Classes\UI\LegionUI.cpp" />
+    <ClCompile Include="..\Classes\UI\LoadingUI.cpp" />
+    <ClCompile Include="..\Classes\UI\LoginUI.cpp" />
+    <ClCompile Include="..\Classes\UI\MailUI.cpp" />
+    <ClCompile Include="..\Classes\UI\MainUIFight.cpp" />
+    <ClCompile Include="..\Classes\UI\MainUINormal.cpp" />
+    <ClCompile Include="..\Classes\UI\ChatMainUI.cpp" />
+    <ClCompile Include="..\Classes\UI\CreatePlayer.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\CdCtrol.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\ComboBox.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\GridArrayUI.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\GridIcon.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\JoyStick.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\MenuForPlayer.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\NumberAdjuster.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\RadioButtonSet.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\RichTextEX.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\ScrollBar.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\ScrollList.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\ScrollMsgWindow.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\ScrollTable.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\TimerProgressBar.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\TuoYuanAction.cpp" />
+    <ClCompile Include="..\Classes\UI\CustomCtrl\UnderLinedText.cpp" />
+    <ClCompile Include="..\Classes\UI\GamePrompt.cpp" />
+    <ClCompile Include="..\Classes\UI\GameUI.cpp" />
+    <ClCompile Include="..\Classes\UI\ManufactureUI.cpp" />
+    <ClCompile Include="..\Classes\UI\MessageBoxUI.cpp" />
+    <ClCompile Include="..\Classes\UI\MissionUI.cpp" />
+    <ClCompile Include="..\Classes\UI\NpcDialog.cpp" />
+    <ClCompile Include="..\Classes\UI\OneStroke.cpp" />
+    <ClCompile Include="..\Classes\UI\OpenLock.cpp" />
+    <ClCompile Include="..\Classes\UI\Relive.cpp" />
+    <ClCompile Include="..\Classes\UI\ResMgr\CtrlAllocator.cpp" />
+    <ClCompile Include="..\Classes\UI\ReviveUI.cpp" />
+    <ClCompile Include="..\Classes\UI\RoleAttriUI.cpp" />
+    <ClCompile Include="..\Classes\UI\RolePackageUI.cpp" />
+    <ClCompile Include="..\Classes\UI\RoleSelectUI.cpp" />
+    <ClCompile Include="..\Classes\UI\SelectPlayer.cpp" />
+    <ClCompile Include="..\Classes\UI\ServerList.cpp" />
+    <ClCompile Include="..\Classes\UI\SkyBookUI.cpp" />
+    <ClCompile Include="..\Classes\UI\StrengthenUI.cpp" />
+    <ClCompile Include="..\Classes\UI\TeamUI.cpp" />
+    <ClCompile Include="..\Classes\UI\TaskDialog.cpp" />
+    <ClCompile Include="..\Classes\UI\TaskUI.cpp" />
+    <ClCompile Include="..\Classes\UI\TeamApplicationUI.cpp" />
+    <ClCompile Include="..\Classes\UI\GameUIWithOutSideTouchEvent.cpp" />
+    <ClCompile Include="..\Classes\UI\UIWorldMap.cpp" />
+    <ClCompile Include="..\Classes\UI\WaitMessageUI.cpp" />
+    <ClCompile Include="..\Classes\UI\WaveEnd.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Common\AudioManager.h" />
+    <ClInclude Include="..\Classes\Common\CoCosAudioManager.h" />
+    <ClInclude Include="..\Classes\Common\CommonDef.h" />
+    <ClInclude Include="..\Classes\Common\DataPool.h" />
+    <ClInclude Include="..\Classes\Common\SysTipsMgr.h" />
+    <ClInclude Include="..\Classes\Common\NameManager.h" />
+    <ClInclude Include="..\Classes\Common\StringDef.h" />
+    <ClInclude Include="..\Classes\GameScene\BeginnerGuide.h" />
+    <ClInclude Include="..\Classes\GameScene\BeginnerGuideLayer.h" />
+    <ClInclude Include="..\Classes\GameScene\BeyondMap.h" />
+    <ClInclude Include="..\Classes\GameScene\Bullet.h" />
+    <ClInclude Include="..\Classes\GameScene\Chests.h" />
+    <ClInclude Include="..\Classes\GameScene\db.h" />
+    <ClInclude Include="..\Classes\GameScene\GameDataManager.h" />
+    <ClInclude Include="..\Classes\GameScene\GameEffectLayer.h" />
+    <ClInclude Include="..\Classes\GameScene\GameExpression.h" />
+    <ClInclude Include="..\Classes\GameScene\GameHelper.h" />
+    <ClInclude Include="..\Classes\GameScene\GameLayer.h" />
+    <ClInclude Include="..\Classes\GameScene\GameManager.h" />
+    <ClInclude Include="..\Classes\GameScene\GameMap.h" />
+    <ClInclude Include="..\Classes\GameScene\GameMapTypes.h" />
+    <ClInclude Include="..\Classes\GameScene\GameProcess.h" />
+    <ClInclude Include="..\Classes\GameScene\GameScene.h" />
+    <ClInclude Include="..\Classes\GameScene\GameTipsLayer.h" />
+    <ClInclude Include="..\Classes\GameScene\GameUILayer.h" />
+    <ClInclude Include="..\Classes\GameScene\GameVariable.h" />
+    <ClInclude Include="..\Classes\GameScene\GodDeviceManager.h" />
+    <ClInclude Include="..\Classes\GameScene\GridsManager.h" />
+    <ClInclude Include="..\Classes\GameScene\HallTechManager.h" />
+    <ClInclude Include="..\Classes\GameScene\Hero.h" />
+    <ClInclude Include="..\Classes\GameScene\IndicatorLayer.h" />
+    <ClInclude Include="..\Classes\GameScene\Item.h" />
+    <ClInclude Include="..\Classes\GameScene\ItemGrid.h" />
+    <ClInclude Include="..\Classes\GameScene\ItemType.h" />
+    <ClInclude Include="..\Classes\GameScene\LoginScene.h" />
+    <ClInclude Include="..\Classes\GameScene\MapItem.h" />
+    <ClInclude Include="..\Classes\GameScene\MessageCenter.h" />
+    <ClInclude Include="..\Classes\GameScene\Monster.h" />
+    <ClInclude Include="..\Classes\GameScene\NPC.h" />
+    <ClInclude Include="..\Classes\GameScene\Pet.h" />
+    <ClInclude Include="..\Classes\GameScene\PetDataManager.h" />
+    <ClInclude Include="..\Classes\GameScene\PKMode.h" />
+    <ClInclude Include="..\Classes\GameScene\Player.h" />
+    <ClInclude Include="..\Classes\GameScene\Robot.h" />
+    <ClInclude Include="..\Classes\GameScene\RoleBuff.h" />
+    <ClInclude Include="..\Classes\GameScene\RoleFighter.h" />
+    <ClInclude Include="..\Classes\GameScene\RoleState_Dead.h" />
+    <ClInclude Include="..\Classes\GameScene\RoleState_Fight.h" />
+    <ClInclude Include="..\Classes\GameScene\RoleState_Forbiden.h" />
+    <ClInclude Include="..\Classes\GameScene\RoleState_Injured.h" />
+    <ClInclude Include="..\Classes\GameScene\RoleTitle.h" />
+    <ClInclude Include="..\Classes\GameScene\RoleTitleLayer.h" />
+    <ClInclude Include="..\Classes\GameScene\RootScene.h" />
+    <ClInclude Include="..\Classes\GameScene\Skill.h" />
+    <ClInclude Include="..\Classes\GameScene\SkillScript.h" />
+    <ClInclude Include="..\Classes\GameScene\SkillScriptFactory.h" />
+    <ClInclude Include="..\Classes\GameScene\SkillType.h" />
+    <ClInclude Include="..\Classes\GameScene\TaskMgr.h" />
+    <ClInclude Include="..\Classes\GameScene\UpdateScene.h" />
+    <ClInclude Include="..\Classes\GameUpdate\GameUpdate.h" />
+    <ClInclude Include="..\Classes\GameUpdate\GameUpdateManager.h" />
+    <ClInclude Include="..\Classes\GameUpdate\GameUpdateUI.h" />
+    <ClInclude Include="..\Classes\Net\message.h" />
+    <ClInclude Include="..\Classes\Net\msg_achievement.h" />
+    <ClInclude Include="..\Classes\Net\msg_activeCenter.h" />
+    <ClInclude Include="..\Classes\Net\msg_battle.h" />
+    <ClInclude Include="..\Classes\Net\msg_betweenClientLs.h" />
+    <ClInclude Include="..\Classes\Net\msg_betweenLsGs.h" />
+    <ClInclude Include="..\Classes\Net\msg_betweenLsPs.h" />
+    <ClInclude Include="..\Classes\Net\msg_chat.h" />
+    <ClInclude Include="..\Classes\Net\msg_friend.h" />
+    <ClInclude Include="..\Classes\Net\msg_guild.h" />
+    <ClInclude Include="..\Classes\Net\msg_item.h" />
+    <ClInclude Include="..\Classes\Net\msg_mail.h" />
+    <ClInclude Include="..\Classes\Net\msg_mall.h" />
+    <ClInclude Include="..\Classes\Net\msg_map.h" />
+    <ClInclude Include="..\Classes\Net\msg_move.h" />
+    <ClInclude Include="..\Classes\Net\msg_nonInGame.h" />
+    <ClInclude Include="..\Classes\Net\msg_others.h" />
+    <ClInclude Include="..\Classes\Net\msg_pet.h" />
+    <ClInclude Include="..\Classes\Net\msg_role.h" />
+    <ClInclude Include="..\Classes\Net\msg_sale.h" />
+    <ClInclude Include="..\Classes\Net\msg_task.h" />
+    <ClInclude Include="..\Classes\Net\msg_team.h" />
+    <ClInclude Include="..\Classes\Net\msg_trade.h" />
+    <ClInclude Include="..\Classes\Net\NetDispatcher.h" />
+    <ClInclude Include="..\Classes\Net\package.h" />
+    <ClInclude Include="..\Classes\Net\pk_achievement.h" />
+    <ClInclude Include="..\Classes\Net\pk_activeCenter.h" />
+    <ClInclude Include="..\Classes\Net\pk_battle.h" />
+    <ClInclude Include="..\Classes\Net\pk_betweenClientLs.h" />
+    <ClInclude Include="..\Classes\Net\pk_betweenLsGs.h" />
+    <ClInclude Include="..\Classes\Net\pk_betweenLsPs.h" />
+    <ClInclude Include="..\Classes\Net\pk_chat.h" />
+    <ClInclude Include="..\Classes\Net\pk_friend.h" />
+    <ClInclude Include="..\Classes\Net\pk_guild.h" />
+    <ClInclude Include="..\Classes\Net\pk_item.h" />
+    <ClInclude Include="..\Classes\Net\pk_mail.h" />
+    <ClInclude Include="..\Classes\Net\pk_mall.h" />
+    <ClInclude Include="..\Classes\Net\pk_map.h" />
+    <ClInclude Include="..\Classes\Net\pk_move.h" />
+    <ClInclude Include="..\Classes\Net\pk_nonInGame.h" />
+    <ClInclude Include="..\Classes\Net\pk_others.h" />
+    <ClInclude Include="..\Classes\Net\pk_pet.h" />
+    <ClInclude Include="..\Classes\Net\pk_role.h" />
+    <ClInclude Include="..\Classes\Net\pk_sale.h" />
+    <ClInclude Include="..\Classes\Net\pk_task.h" />
+    <ClInclude Include="..\Classes\Net\pk_team.h" />
+    <ClInclude Include="..\Classes\Net\pk_trade.h" />
+    <ClInclude Include="..\Classes\UIData\CCopyDataMgr.h" />
+    <ClInclude Include="..\Classes\UIData\ChatData.h" />
+    <ClInclude Include="..\Classes\UIData\CMatchMachine.h" />
+    <ClInclude Include="..\Classes\UIData\Legion.h" />
+    <ClInclude Include="..\Classes\UI\CocosUI.h" />
+    <ClInclude Include="..\Classes\UI\CommonUI.h" />
+    <ClInclude Include="..\Classes\UI\CopyEnd.h" />
+    <ClInclude Include="..\Classes\UI\CopyMapUI.h" />
+    <ClInclude Include="..\Classes\UI\CopyMapUICommon.h" />
+    <ClInclude Include="..\Classes\UI\CopyMapUIContendFor.h" />
+    <ClInclude Include="..\Classes\UI\CopyMapUIDef.h" />
+    <ClInclude Include="..\Classes\UI\CopyMapUIFreeFight.h" />
+    <ClInclude Include="..\Classes\UI\CopyMapUISurvive.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\CustomCtrl.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\DragCtrol.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\PageNum.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\ProgressBar.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\ScrollGrids.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\ScrollMenu.h" />
+    <ClInclude Include="..\Classes\UI\DramaUi.h" />
+    <ClInclude Include="..\Classes\UI\FightPause.h" />
+    <ClInclude Include="..\Classes\UI\FreeFightCheckOut.h" />
+    <ClInclude Include="..\Classes\UI\FreeFightScoreUI.h" />
+    <ClInclude Include="..\Classes\UI\FriendUI.h" />
+    <ClInclude Include="..\Classes\UI\GodDeviceUI.h" />
+    <ClInclude Include="..\Classes\UI\HallTechTreeUI.h" />
+    <ClInclude Include="..\Classes\UI\HallTechUI.h" />
+    <ClInclude Include="..\Classes\UI\HeroInfo.h" />
+    <ClInclude Include="..\Classes\UI\ItemTipsUI.h" />
+    <ClInclude Include="..\Classes\UI\AddLegionUI.h" />
+    <ClInclude Include="..\Classes\UI\LegionUI.h" />
+    <ClInclude Include="..\Classes\UI\LoadingUI.h" />
+    <ClInclude Include="..\Classes\UI\LoginUI.h" />
+    <ClInclude Include="..\Classes\UI\MailUI.h" />
+    <ClInclude Include="..\Classes\UI\MainUI.h" />
+    <ClInclude Include="..\Classes\UI\MainUIFight.h" />
+    <ClInclude Include="..\Classes\UI\MainUINormal.h" />
+    <ClInclude Include="..\Classes\UI\ChatMainUI.h" />
+    <ClInclude Include="..\Classes\UI\CreatePlayer.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\CdCtrol.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\ComboBox.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\GridArrayUI.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\GridIcon.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\JoyStick.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\MenuForPlayer.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\NumberAdjuster.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\RadioButtonSet.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\RichTextEX.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\ScrollBar.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\ScrollList.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\ScrollMsgWindow.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\ScrollTable.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\TimerProgressBar.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\TuoYuanAction.h" />
+    <ClInclude Include="..\Classes\UI\CustomCtrl\UnderLinedText.h" />
+    <ClInclude Include="..\Classes\UI\GamePrompt.h" />
+    <ClInclude Include="..\Classes\UI\GameUI.h" />
+    <ClInclude Include="..\Classes\UI\GameUIDef.h" />
+    <ClInclude Include="..\Classes\UI\ManufactureUI.h" />
+    <ClInclude Include="..\Classes\UI\MessageBoxUI.h" />
+    <ClInclude Include="..\Classes\UI\MissionUI.h" />
+    <ClInclude Include="..\Classes\UI\NpcDialog.h" />
+    <ClInclude Include="..\Classes\UI\OneStroke.h" />
+    <ClInclude Include="..\Classes\UI\OpenLock.h" />
+    <ClInclude Include="..\Classes\UI\Relive.h" />
+    <ClInclude Include="..\Classes\UI\ResMgr\CtrlAllocator.h" />
+    <ClInclude Include="..\Classes\UI\ReviveUI.h" />
+    <ClInclude Include="..\Classes\UI\RoleAttriUI.h" />
+    <ClInclude Include="..\Classes\UI\RolePackageUI.h" />
+    <ClInclude Include="..\Classes\UI\RoleSelectUI.h" />
+    <ClInclude Include="..\Classes\UI\SelectPlayer.h" />
+    <ClInclude Include="..\Classes\UI\ServerList.h" />
+    <ClInclude Include="..\Classes\UI\SkyBookUI.h" />
+    <ClInclude Include="..\Classes\UI\StrengthenUI.h" />
+    <ClInclude Include="..\Classes\UI\TeamUI.h" />
+    <ClInclude Include="..\Classes\UI\TaskDialog.h" />
+    <ClInclude Include="..\Classes\UI\TaskUI.h" />
+    <ClInclude Include="..\Classes\UI\TeamApplicationUI.h" />
+    <ClInclude Include="..\Classes\UI\GameUIWithOutSideTouchEvent.h" />
+    <ClInclude Include="..\Classes\UI\UIWorldMap.h" />
+    <ClInclude Include="..\Classes\UI\WaitMessageUI.h" />
+    <ClInclude Include="..\Classes\UI\WaveEnd.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d\cocos\2d\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\editor-support\cocostudio\proj.win32\libCocosStudio.vcxproj">
+      <Project>{b57cf53f-2e49-4031-9822-047cc0e6bde2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
